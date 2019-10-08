@@ -1,0 +1,62 @@
+#dLabel {
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: solid 1px #cccccc;
+    text-align: left;
+    padding: 7.5px 15px;
+    color: #ccc;
+    letter-spacing: 0.7px;
+    margin-top: 25px;
+}
+
+.caret {
+    float: right;
+    margin-top: 9px;
+    display: block;
+}
+
+.dropdown-menu {
+    width: 240px;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.dropdown button:hover, .dropdown button:focus {
+  border: none;
+  outline: 0;
+}
+
+.dropdown.open button#dLabel {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    border: solid 1px #666;
+    border-bottom: none;
+}
+
+.dropdown.open ul {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    border: solid 1px #666;
+    border-top: none;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.dropdown-menu li {
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 7.5px 15px;
+    border-top: solid 1px #f3f3f3;
+}
+
+.dropdown-menu li:hover {
+    background-color: #ccc;
+}
