@@ -63,46 +63,42 @@
   <!-- Services -->
   <section class="page-section" id="content"> 
     <div class="container bg-faded">
-      <span class="d-block bg-primary p-3 xl text-center text-white"><h5>Me connecter à mon espace client</h5></span>
-      <div class="row m-5">
-        <div class="mx-auto w-75 p-3 bg-light text-center">
+      <span class="d-block bg-primary p-3 xl text-center text-white">
+        <h5>Me connecter à mon espace client</h5>
+      </span>
           <!-- Demo content-->
-          <div class="row">
-            <div class="col-lg-10 col-xl-7 mx-auto">
-                <!--h3 class="display-4"> Se connecter à mon espace client</h3-->
-              <p class="text-muted mb-4">Identifiez-vous pour poursuivre</p>
-              <form action="profile.html" method="get">
-                <div class="form-group mb-3">
-                  <input id="inputEmail" type="email" aria-describedby="emailHelp" placeholder="Adresse mail" autofocus="" class="form-control border-0 shadow-sm px-2" required>
-                  <!--input id="inputEmail" type="email" aria-describedby="emailHelp" placeholder="Adresse mail" autofocus="" class="form-control border-0 shadow-sm px-2" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required-->
-                  <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons pas votre courriel à qui que ce soit.</small>
-                  <!--div class="invalid-feedback">
-                    The expiration date is required and must be greater than today!
-                  </div-->
-                </div>
-                <div class="form-group mb-3">
-                  <input id="inputPassword" type="password" placeholder="Mot de passe" required="" class="form-control border-0 shadow-sm px-2 text-primary">
-                    <!--input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required-->
-                </div>
-                <div class="custom-control custom-checkbox mb-3">
-                  <input id="customCheck1" type="checkbox" checked class="custom-control-input">
-                  <label for="customCheck1" class="custom-control-label"> 
-                    Restez connecté
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 shadow-sm">
-                  Identifiez-vous
-                </button>
-                <div class="text-center d-flex justify-content-between mt-4">
-                  <a href="#" class="text-primary text-muted">
-                    Mot de passe oublié?
-                  </a>
-                </div>
-              </form>
-            </div>
+      <div class="col-lg-8 col-xl-5 mx-auto mt-4">
+        <!--h3 class="display-4"> Se connecter à mon espace client</h3-->
+        <p class="text-muted mb-4">Identifiez-vous pour poursuivre</p>
+        <form action="profile.html" method="get">
+          <div class="form-group mb-3">
+            <input id="inputEmail" type="email" aria-describedby="emailHelp" placeholder="Adresse mail" autofocus="" class="form-control border-1 shadow-sm px-2" required>
+            <!--input id="inputEmail" type="email" aria-describedby="emailHelp" placeholder="Adresse mail" autofocus="" class="form-control border-0 shadow-sm px-2" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required-->
+            <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons pas votre courriel à qui que ce soit.</small>
+            <!--div class="invalid-feedback">
+              The expiration date is required and must be greater than today!
+            </div-->
           </div>
-        </div><!-- End -->
-      </div>
+          <div class="form-group mb-3">
+            <input class="form-control border-1 shadow-sm px-2" id="inputPassword" type="password" placeholder="Mot de passe" required="" class="form-control border-0 shadow-sm px-2 text-primary">
+              <!--input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required-->
+          </div>
+          <div class="custom-control custom-checkbox mb-3">
+            <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+            <label for="customCheck1" class="custom-control-label"> 
+              Restez connecté
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 shadow-sm">
+            Identifiez-vous
+          </button>
+          <div class="text-center d-flex justify-content-between mt-4">
+            <a href="#" class="text-primary text-muted">
+              Mot de passe oublié?
+            </a>
+          </div>
+        </form>
+      </div><!-- End -->
     </div>    
   </section>
   <!-- Contact -->

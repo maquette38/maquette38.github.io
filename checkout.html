@@ -61,81 +61,75 @@
   </nav>
 
   <!-- Services -->
-  <section class="page-section" id="content">
+  <section class="page-section" id="content"> 
     <div class="container bg-faded">
-      <span class="d-block bg-primary p-3 xl text-center text-white"><h5>Payer la commande</h5></span>
-      <div class="row m-5">
-        <div class="mx-auto w-75 p-3 bg-light">
-          <!-- Card details-->
-          <div class="row">
-            <div class="col-lg-10 col-xl-7 mx-auto mb-5 text-right">
-              <img src="img/visa.jpg" id="visa">
-              <img src="img/amex.jpg" id="amex">
-              <img src="img/mastercard.jpg" id="mastercard">
+      <span class="d-block bg-primary p-3 xl text-center text-white">
+        <h5>Me connecter à mon espace client</h5>
+      </span>
+        <div class="col-lg-8 col-xl-5 mx-auto mt-4 text-right">
+          <img src="img/visa.jpg" id="visa">
+          <img src="img/amex.jpg" id="amex">
+          <img src="img/mastercard.jpg" id="mastercard">
+        </div> 
+        <div class="col-lg-8 col-xl-5 mx-auto mt-4">
+          <div class="alert alert-danger" role="alert" id="alert">Les informations fournies ne sont pas valides.</div>
+          <form action="payment.html" method="get" class="bootstrap-form needs-validation" id="credit_card" novalidate>
+            <div class="form-group mb-3">
+              <label for="credit-card-holder" class="font-weight-bold">Nom du porteur</label>
+              <div class="input-group">
+                <span class="input-group-prepend">
+                  <div class="input-group-text bg-transparent border-right-0">
+                    <i class="fa fa-user"></i>
+                  </div>
+                </span>
+                <input class="form-control py-2 border-left-0 border" type="text" placeholder="Nom du porteur" id="credit-card-holder" name="credit-card-holder" autocomplete="off" required>
+                <div class="invalid-feedback">
+                  Le nom du porteur doit contenir au moins deux caractères 
+                </div>
+              </div>
             </div>
-            <div class="col-lg-10 col-xl-7 mx-auto">
-              <!--p class="alert alert-success">Some text success or error</p-->
-              <div class="alert alert-danger" role="alert" id="alert">Les informations fournies ne sont pas valides.</div>
-              <form action="payment.html" method="get" class="bootstrap-form needs-validation" id="credit_card" novalidate>
-                <div class="form-group mb-3">
-                  <label for="credit-card-holder" class="font-weight-bold">Nom du porteur</label>
-                  <div class="input-group">
-                    <span class="input-group-prepend">
-                      <div class="input-group-text bg-transparent border-right-0">
-                        <i class="fa fa-user"></i>
-                      </div>
-                    </span>
-                    <input class="form-control py-2 border-left-0 border" type="text" placeholder="Nom du porteur" id="credit-card-holder" name="credit-card-holder" autocomplete="off" required>
-                    <div class="invalid-feedback">
-                      Le nom du porteur doit contenir au moins deux caractères
-                    </div>
-                  </div>
+            <!-- Card number -- form-group.// -->
+            <div class="form-group mb-3" id="card-number-field">
+              <label for="credit-card-number" class="font-weight-bold">Numéro de carte</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
                 </div>
-                <!-- Card number -- form-group.// -->
-                <div class="form-group mb-3" id="card-number-field">
-                  <label for="credit-card-number" class="font-weight-bold">Numéro de carte</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
-                    </div>
-                    <input id="credit-card-number" type="text" class="form-control" placeholder="---- ---- ---- ----" pattern="[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}" required>
-                    <div class="invalid-feedback">
-                      Un numéro valide de carte de crédit est requis
-                    </div>
-                  </div> <!-- input-group.// -->
+                <input id="credit-card-number" type="text" class="form-control" placeholder="---- ---- ---- ----" pattern="[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}" required>
+                <div class="invalid-feedback">
+                   Un numéro valide de carte de crédit est requis 
                 </div>
-                <!-- form-group.// -->
-                <div class="form-group row">
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <label class="control-label font-weight-bold" for="expiration-date">
-                        Date d'expiration
-                      </label>
-                      <input id="expiration-date" type="text" class="text-center form-control" placeholder="MM / YYYY" aria-label="MM/YYYY" aria-describedby="basic-addon1" required>
-                      <div class="invalid-feedback">
-                        La date d'expiration doit être dans le futur
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="cvv-number" class="control-label font-weight-bold">CVV</label>
-                      <input type="text" class="form-control" id="cvv-number" placeholder="CVV" pattern="[0-9]{3}" required>
-                      <div class="invalid-feedback">
-                        Le nombre CVV est composé de 3 chiffres
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group" id="pay-now">
-                  <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 shadow-sm" id="confirm-purchase">Confirmer</button>
-                </div>
-              </form>
+              </div> <!-- input-group.// -->
             </div>
-          </div>
-        </div><!-- End -->
-      </div>
-    </div>
+            <!-- form-group.// -->
+            <div class="form-group row">
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <label class="control-label font-weight-bold" for="expiration-date">
+                    Date d'expiration
+                  </label>
+                  <input id="expiration-date" type="text" class="text-center form-control" placeholder="MM / YYYY" aria-label="MM/YYYY" aria-describedby="basic-addon1" required>
+                  <div class="invalid-feedback">
+                    La date d'expiration doit être dans le futur
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="cvv-number" class="control-label font-weight-bold">CVV</label>
+                  <input type="text" class="form-control" id="cvv-number" placeholder="CVV" pattern="[0-9]{3}" required>
+                  <div class="invalid-feedback">
+                    Le nombre CVV est composé de 3 chiffres 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group" id="pay-now">
+              <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 shadow-sm" id="confirm-purchase">Confirmer</button>
+            </div>
+          </form>
+        </div>
+    </div>    
   </section>
   <!-- Contact -->
   <section class="page-section" id="site-map">
