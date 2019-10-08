@@ -65,14 +65,14 @@
     <div class="container bg-faded">
       <span class="d-block bg-primary p-3 xl text-center text-white"><h5>Payer la commande</h5></span>
       <div class="row m-5">
-        <div class="mx-auto w-75 p-3 bg-light">        
+        <div class="mx-auto w-75 p-3 bg-light">
           <!-- Card details-->
-          <div class="row">            
+          <div class="row">
             <div class="col-lg-10 col-xl-7 mx-auto mb-5 text-right">
               <img src="img/visa.jpg" id="visa">
               <img src="img/amex.jpg" id="amex">
               <img src="img/mastercard.jpg" id="mastercard">
-            </div> 
+            </div>
             <div class="col-lg-10 col-xl-7 mx-auto">
               <!--p class="alert alert-success">Some text success or error</p-->
               <div class="alert alert-danger" role="alert" id="alert">Les informations fournies ne sont pas valides.</div>
@@ -87,7 +87,7 @@
                     </span>
                     <input class="form-control py-2 border-left-0 border" type="text" placeholder="Nom du porteur" id="credit-card-holder" name="credit-card-holder" autocomplete="off" required>
                     <div class="invalid-feedback">
-                      The holder name is required and must contain at least 2 characters
+                      Le nom du porteur doit contenir au moins deux caractères
                     </div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@
                     </div>
                     <input id="credit-card-number" type="text" class="form-control" placeholder="---- ---- ---- ----" pattern="[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}" required>
                     <div class="invalid-feedback">
-                      Credit card number is required and must be 16 digits
+                      Un numéro valide de carte de crédit est requis
                     </div>
                   </div> <!-- input-group.// -->
                 </div>
@@ -113,7 +113,7 @@
                       </label>
                       <input id="expiration-date" type="text" class="text-center form-control" placeholder="MM / YYYY" aria-label="MM/YYYY" aria-describedby="basic-addon1" required>
                       <div class="invalid-feedback">
-                        The expiration date is required and must be greater than today!
+                        La date d'expiration doit être dans le futur
                       </div>
                     </div>
                   </div>
@@ -122,7 +122,7 @@
                       <label for="cvv-number" class="control-label font-weight-bold">CVV</label>
                       <input type="text" class="form-control" id="cvv-number" placeholder="CVV" pattern="[0-9]{3}" required>
                       <div class="invalid-feedback">
-                        CVV number must be 3 characters. Only digits are allowed!
+                        Le nombre CVV est composé de 3 chiffres
                       </div>
                     </div>
                   </div>
